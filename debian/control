@@ -1,0 +1,15 @@
+Source: telegram-messenger
+Section: internet
+Priority: optional
+Maintainer: Elias Ojala <elias@kotilinux.org>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://anonscm.debian.org/collab-maint/telegram-messenger.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/telegram-messenger.git
+
+Package: telegram-messenger
+Architecture: amd64
+Depends: curl, tar, xz-utils, ${shlibs:Depends}, ${misc:Depends}
+Description: Installer for Telegram Desktop app.
+ Fast and secure desktop app, perfectly synced with your mobile phone.

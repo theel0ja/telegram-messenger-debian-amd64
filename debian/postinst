@@ -1,0 +1,13 @@
+curl -X GET -L https://tdesktop.com/linux --create-dirs -o /usr/share/telegram-messenger/tsetup.tar.xz
+tar -xf /usr/share/telegram-messenger/tsetup.tar.xz -C /usr/share/telegram-messenger
+rm /usr/share/telegram-messenger/tsetup.tar.xz
+
+mv /usr/share/telegram-messenger/Telegram /usr/share/telegram-messenger/TelegramFolder
+mv /usr/share/telegram-messenger/TelegramFolder/Telegram /usr/share/telegram-messenger/Telegram
+mv /usr/share/telegram-messenger/TelegramFolder/Updater /usr/share/telegram-messenger/Updater
+
+rm -rf /usr/share/telegram-messenger/TelegramFolder
+
+chmod 755 /usr/share/telegram-messenger
+chmod 777 /usr/share/telegram-messenger/Telegram
+chmod 777 /usr/share/telegram-messenger/Updater
